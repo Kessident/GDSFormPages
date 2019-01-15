@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Project Submission Form</title>
-    <link rel="stylesheet" href="ProjectSubmission.css">
-  </head>
-  <body>
 
-    <script src="ProjectSubmission.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Project Submission Form</title>
+  <link rel="stylesheet" href="ProjectSubmission.css">
+</head>
+
+<body>
+  <h1>Peachtree Road United Methodist Church</h1>
+  <h2>__th Annual Great Day of Service  March __, 20__</h1>
+  <h3>Service Project Submission Form</h2>
+
+  <form>
+    OrgName: <input type="text" name="OrgName" value=""> <br>
+    Contact: <input type="text" name="ContactPerson" value="">
+    Title: <input type="text" name="ContactPersonTitle" value=""> <br>
+    Address: <input type="text" name="OrgAddress" value="">
+    Zip: <input type="text" name="OrgZip" value=""> <br>
+    Phone: <input type="tel" name="OrgPhone" value="">
+    Extension: <input type="number" name="OrgPhoneExt" value=""> <br>
+    Cell: <input type="tel" name="ContactPersonCell" value="">
+    Email: <input type="email" name="ContactPersonEmail" value=""> <br>
+    Website: <input type="url" name="OrgWebsite" placeholder="https:\\organizationWebsite.org"> <br>
+
+    <label for="ProjectDescription">Description:</label>
+    <textarea id="ProjectDescription" name="ProjectDescription" rows="8" cols="80"></textarea> <br>
+
+    Number of Volunteers Needed:
+    Minimum: <input type="number" name="VolunteerMin" class="numberInput" value="0">
+    Ideal: <input type="number" name="VolunteerIdeal" class="numberInput" value="0">
+    Maximum: <input type="number" name="VolunteerMax" class="numberInput" value="0"> <br>
+
+    Child Help: <input type="radio" name="ChildHelp" value="Yes"> Yes
+    <input type="radio" name="ChildHelp" value="No"> No
+    What Age: <input type="number" name="ChildAge" value=""> <br>
+
+    From Org help:
+    <input type="checkbox" name="OrgSupplyStaff" id="OrgStaff">
+    <label for="OrgStaff">Staff</label>
+    <input type="checkbox" name="OrgSupplyVolunteer" id="OrgVol">
+    <label for="OrgVol">Volunteers</label>
+    <input type="checkbox" name="OrgSupplyConstituency" id="OrgCon" value="Constituency">
+    <label for="OrgCon">Constituency</label> <br>
+    Estimated number: <input type="number" name="OrgSupplyNumber" value=""> <br>
+
+    Est Hours: <input type="number" name="EstHoursToComplete" value=""> <br>
+
+    Provide Materials? <input type="radio" name="MaterialsProvided" value="Yes"> Yes
+    <input type="radio" name="MaterialsProvided" value="No"> No <br>
+    Additional Materials: <textarea name="AdditionalMaterials" rows="2" cols="80"></textarea> <br>
+
+    Estimated Cost: <input type="number" name="EstCost" value=""> <br>
+
+    Inclement Weather: <input type="radio" name="InclementWeather" value="Yes"> Yes
+    <input type="radio" name="InclementWeather" value="No"> No <br>
+    Alternative: <input type="radio" name="IncWeatherAlt" value="Yes"> Yes
+    <input type="radio" name="IncWeatherAlt" value="No"> No <br>
+    Description: <textarea name="IncWeatherAltPlans" rows="5" cols="80"></textarea> <br> <br> <br>
+
+
+
+
+
+    <input type="submit" name="SubmitButton" value="Submit">
+  </form>
+
+  <script src="ProjectSubmission.js"></script>
+</body>
+
 </html>
