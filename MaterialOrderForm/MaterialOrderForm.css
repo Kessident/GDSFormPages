@@ -1,0 +1,23 @@
+.tableWrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+table {
+  background: black;
+  margin: 0.5rem;
+}
+
+th, td {
+  background: white;
+}
+
+th {
+  border: 1px solid #000;
+}
+
+input[type=number] {
+  width: 2.5rem;
+}
