@@ -1,0 +1,16 @@
+.projectPrefIndicatorTitleWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectPrefIndicatorTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.projectListWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}

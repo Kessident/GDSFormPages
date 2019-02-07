@@ -4,12 +4,160 @@
 <head>
   <meta charset="utf-8">
   <title>Volunteer Signup Form</title>
-  <link rel="stylesheet" href="VolunteerSignup.css">
+  <link rel="stylesheet" href="../css/VolunteerSignup.css">
 </head>
 
 <body>
 
-  <script src="VolunteerSignup.js"></script>
+  <h1>The Great Day of Service</h1>
+  <h2>Peachtree Road United Methodist Church <br>
+    Saturday, March __, 20__</h2>
+
+  <h4><u>Registering for a project</u></h4>
+  The projects are listed by category on the bottom of this page and described in detail on the PRUMC website at <a href="#">www.prumc.org</a>. Child age restrictions are denoted in parenthesis.<br>
+  Please indicate your project service preferences by listing your 1st, 2nd, and 3rd choices of project categories using the letter code found below. Additionally, if you prefer to serve on a specific project, indicate below. If your selected
+  project is full, you will be assigned to a project within your category preferences. Please fill out information completely!
+  <br><br>
+
+
+  <form class="">
+    Family Information
+    <input type="text" name="familyName">
+    <input type="tel" name="familyPhone">
+    <input type="text" name="familyAddress">
+    <input type="text" name="familyCity">
+    <input type="text" name="familyState">
+    <input type="text" name="familyZIP">
+    <input type="email" name="familyEmail">
+    <input type="text" name="familySpecial">
+
+    <br>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Project Registration (Adults, Youth, & Children)</th>
+          <th>AGE IF 5-18</th>
+          <th class="projectPrefIndicatorTitleWrapper" colspan="3">Service Project Category Preferences <br>
+            <div class="projectPrefIndicatorTitle">
+              <div>1ST</div>
+              <div>2ND</div>
+              <div>3RD</div>
+            </div>
+          </th>
+          <th>First Great Day?</th>
+          <th>Visitor?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="">Name, Phone, Email</div>
+          </td>
+          <td><input type="number" name="age" placeholder="leave blank if > 18"> </td>
+          <td>
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+            <input type="text" name="" value="">
+          </td>
+          <td><input type="checkbox" name="firstGreatDay"> </td>
+          <td><input type="checkbox" name="isVisitor"> </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" name="addNewProjRegis">Add New Person</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Child Care (For Children 4 Months - 4 Years)</th>
+          <th>AGE (years and months)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="">Name</div>
+          </td>
+          <td><input type="number" name="childCareAgeYears" placeholder="years">
+            <input type="number" name="childCareAgeMonths" placeholder="months">
+          </td>
+        <tr>
+          <td>
+            <button type="button" name="addNewChildCare">Add New Child</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h5>Children ages 4 months - 4 years may be dropped off for childcare at 8:30 am. All children must be picked up by 3:00 pm. <br>
+      If you have any questions contact Beth Spencer at <a href="tel:+14042408234">404-240-8234</a> or <a href="mailto:beths@prumc.org">beths@prumc.org</a></h5>
+  </form>
+
+
+
+
+  <br><br><br><br><br>
+
+
+
+  <div class="projectListWrapper">
+    <div class="projectListColumn">
+      <ol type="A">
+        <li>Activity / Party for senior adults, youth or children at:
+          <ol type="1">
+            <li>Covenant House
+              <ul style="list-style-type:none">
+                <li>Easter Baskets</li>
+              </ul>
+            </li>
+            <li>Fellowship</li>
+            <li>Jerusalem</li>
+            <li>SafeHouse</li>
+            <li>Trinity</li>
+            <li>Wilderness</li>
+          </ol>
+        </li>
+        <li>Business Seminar</li>
+        <li>Hollis Innovation Academy</li>
+      </ol>
+
+      <ol type="A" start="8">
+        <li>Habitat</li>
+        <li>Indoor / Outdoor Spring Cleaning</li>
+      </ol>
+
+      <div class="projectListColumn">
+
+
+        <ol type="A" start="12">
+          <li>Landscape / Yardwork</li>
+          <li>Maintenance / Improvement (Indoor / Outdoor / Painting / Carpentry)</li>
+        </ol>
+
+        <ol type="A" start="18">
+          <li>Church Restoration (Carpentry, Painting, Yardwork)</li>
+          <li>Sort / Pack/ Organize / Clean At: </li>
+        </ol>
+      </div>
+
+      <div class="projectListColumn">
+        <ol type="A" start="23">
+          <li>Work At PRUMC: </li>
+        </ol>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  <script src="../js/VolunteerSignup.js"></script>
 </body>
 
 </html>
